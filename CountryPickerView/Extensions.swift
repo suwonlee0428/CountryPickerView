@@ -26,6 +26,9 @@ extension UINavigationController {
         
         if animated, let coordinator = transitionCoordinator {
             coordinator.animate(alongsideTransition: nil) { _ in
+                                                           
+            navigationController?.navigationBar.tintColor = .black
+            navigationController?.navigationBar.backgroundColor = UIColor.white
                 completion()
             }
         } else {
