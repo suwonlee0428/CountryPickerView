@@ -74,7 +74,8 @@ extension CountryPickerViewController {
     
     func prepareNavItem() {
         navigationItem.title = dataSource.navigationTitle
-
+        navigationController?.navigationBar.tintColor = .black
+        navigationController?.navigationBar.backgroundColor = UIColor.white
         // Add a close button if this is the root view controller
         if navigationController?.viewControllers.count == 1 {
             let closeButton = dataSource.closeButtonNavigationItem
